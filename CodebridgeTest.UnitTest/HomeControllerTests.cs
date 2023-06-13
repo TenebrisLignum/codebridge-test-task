@@ -1,4 +1,4 @@
-﻿using Codebridge_Test.Controllers;
+﻿using CodebridgeTest.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CodebridgeTest.UnitTest

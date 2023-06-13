@@ -1,6 +1,6 @@
-﻿using Codebridge_Test.Controllers;
-using Codebridge_Test.Services.Interfaces;
-using Codebridge_Test.ViewModels;
+﻿using CodebridgeTest.Controllers;
+using CodebridgeTest.Services.Interfaces;
+using CodebridgeTest.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 

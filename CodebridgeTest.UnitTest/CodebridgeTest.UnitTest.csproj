@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Codebridge_Test\CodebridgeTest.csproj" />
+    <ProjectReference Include="..\CodebridgeTest\CodebridgeTest.csproj" />
   </ItemGroup>
 
 </Project>
