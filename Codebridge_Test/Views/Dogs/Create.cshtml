@@ -1,0 +1,43 @@
+﻿@model Codebridge_Test.ViewModels.DogViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "_Layout";
+}
+
+<h1>Create dog</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-route="create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Color" class="control-label"></label>
+                <input asp-for="Color" class="form-control" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TailLength" class="control-label"></label>
+                <input asp-for="TailLength" class="form-control" />
+                <span asp-validation-for="TailLength" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Weight" class="control-label"></label>
+                <input asp-for="Weight" class="form-control" />
+                <span asp-validation-for="Weight" class="text-danger"></span>
+            </div>
+
+            <div class="form-group submit-button">
+                <input class="col-6 btn btn-primary" type="submit" value="Create" />
+            </div>
+        </form>
+    </div>
+</div>
+

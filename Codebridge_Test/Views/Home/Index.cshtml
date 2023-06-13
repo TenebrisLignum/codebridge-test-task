@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "_Layout";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<h1>Welcome to the Codebridge test task!</h1>
+<h3>Developed by Artem Hermaniuk</h3>
+
+
+<div class="mt-5">
+    <p>1. At first, here you can check the application. Let's try: </p>
+    <button id="ping-btn" class="btn btn-primary">Ping</button>
+</div>
+
+<div class="mt-5">
+    <p>2. Then you can look at the table of dogs: </p>
+    <a class="btn btn-primary" asp-controller="Dogs" asp-action="Index">Dogs</a>
+</div>
+
+<div class="mt-5">
+    <p>3. And also, you can create a dog! </p>
+    <a class="btn btn-primary" asp-controller="Dogs" asp-action="Create">Create</a>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function () {
+        $('#ping-btn').click(function () {
+            $.ajax({
+                url: '/Home/Ping',
+                type: 'GET',
+                success: function (result) {
+                    alert(result);
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,18 @@
+﻿body {
+    background-color: #fafafa;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+.control-label{
+    font-weight: 500;
+    font-size: medium;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+
+.submit-button{
+    margin-top: 20px;
+}
