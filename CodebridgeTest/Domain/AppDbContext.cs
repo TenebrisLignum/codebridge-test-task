@@ -32,7 +32,5 @@ namespace CodebridgeTest.Domain
                 Weight = 14
             });
         }
-
-        public DbSet<CodebridgeTest.ViewModels.DogViewModel>? DogViewModel { get; set; }
     }
 }
