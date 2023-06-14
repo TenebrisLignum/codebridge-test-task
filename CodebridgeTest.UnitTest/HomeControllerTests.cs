@@ -1,4 +1,5 @@
 ﻿using CodebridgeTest.Controllers;
+using CodebridgeTest.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CodebridgeTest.UnitTest
@@ -25,7 +26,7 @@ namespace CodebridgeTest.UnitTest
 
             Assert.That(okResult, Is.Not.Null);
             Assert.That(okResult.StatusCode, Is.EqualTo(200));
-            Assert.That(okResult.Value, Is.EqualTo("Dogs house service. Version 1.0.1"));
+            Assert.That(okResult.Value, Is.EqualTo(Consts.ApplicationVersion));
         }
     }
 }

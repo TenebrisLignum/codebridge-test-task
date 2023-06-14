@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CodebridgeTest.Helpers;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CodebridgeTest.Controllers
 {
@@ -11,7 +12,7 @@ namespace CodebridgeTest.Controllers
 
         public IActionResult Ping()
         {
-            return Ok("Dogs house service. Version 1.0.1");
+            return Ok(Consts.ApplicationVersion);
         }
     }
 }

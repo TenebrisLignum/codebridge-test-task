@@ -1,4 +1,5 @@
-﻿using CodebridgeTest.Services.Interfaces;
+﻿using CodebridgeTest.Helpers;
+using CodebridgeTest.Services.Interfaces;
 using CodebridgeTest.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,7 +36,7 @@ namespace CodebridgeTest.Controllers
 
             if (await _dogService.IsDogExist(dog.Name))
             {
-                ModelState.AddModelError(nameof(dog.Name), "A dog with that name already exists");
+                ModelState.AddModelError(nameof(dog.Name), Consts.DogAlreadyExist);
                 return View(dog);
             }
 
